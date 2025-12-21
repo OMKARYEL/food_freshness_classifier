@@ -1,66 +1,109 @@
-# 🍽️ Food Freshness Checker
 
-A web-based machine learning application that analyzes uploaded food images and predicts their freshness level to help users decide whether the food is safe to consume.
 
----
+# 🍎 Food Freshness Classification System
 
-## ✨ Features
-- Upload food images through a simple web interface
-- Predicts food quality as **Fresh / Okay / Avoid**
-- Displays uploaded image with prediction
-- Clean and responsive UI
-- Built with scalability in mind for advanced ML models
+A deep learning–based web application that classifies food images as **Fresh** or **Rotten** using a **Convolutional Neural Network (CNN)** integrated with a **Flask** backend.
 
 ---
 
-## 🛠 Tech Stack
-- **Python**
-- **Flask**
-- **HTML, CSS**
-- **Machine Learning (Image Classification)**
-- **Git & GitHub**
+## 📌 Overview
+
+This project allows users to upload a food image and instantly receive a freshness prediction.  
+It demonstrates the complete workflow of training a CNN model and deploying it using a Flask web application.
 
 ---
 
-## 📁 Project Structure
+## 🚀 Features
+
+- Image-based food freshness prediction
+- CNN model trained on fresh and rotten food images
+- Flask backend for model inference
+- Simple and user-friendly web interface
+
+---
+
+## 🧠 Tech Stack
+
+- Python  
+- TensorFlow / Keras  
+- Flask  
+- HTML, CSS  
+- Git & GitHub  
+
+---
+
+## 🏗️ Project Structure
+
+```
+
 food_freshness_classifier/
-│── app.py
-│── model/
-│ └── classifier.py
-│── templates/
-│ └── index.html
-│── static/
-│ └── style.css
-│── requirements.txt
-│── README.md
+├── app.py
+├── train_model.py
+├── templates/
+│   └── index.html
+├── static/
+│   └── style.css
+├── model/              # ignored in Git
+├── dataset/            # ignored in Git
+└── README.md
 
+````
 
 ---
 
-## ▶️ How to Run the Project Locally
+## ⚙️ How to Run Locally
 
+1. Clone the repository:
 ```bash
 git clone https://github.com/OMKARYEL/food_freshness_classifier.git
-cd food_freshness_classifier
+````
+
+2. Install dependencies:
+
+```bash
 pip install -r requirements.txt
+```
+
+3. Run the application:
+
+```bash
 python app.py
+```
 
+4. Open in browser:
 
-Then open your browser and go to:
+```
 http://127.0.0.1:5000/
+```
+
+---
+
+## 🔮 Future Improvements
+
+* Improve model accuracy with more diverse data
+* Add multi-class food classification
+* Deploy the application on cloud platforms
+* Enhance UI and user experience
+
+---
+
+## 👨‍💻 Author
+
+**Omkar**
+Student | Python & Machine Learning Enthusiast
+
+````
+
+---
+
+## ✅ How to push this update
+
+```bash
+git add README.md
+git commit -m "Update README with project description"
+git push origin main
+````
+
+---
 
 
-
-
-## 🚀 Future Deployment Plan
-
-This project is designed to be easily deployable as a web application.
-
-Planned deployment options include:
-
-- **Render / Railway** for hosting the Flask web application
-- **Hugging Face Spaces** for showcasing the ML model with a live demo
-- **Docker (optional)** for containerized deployment
-- **Cloud storage** for handling uploaded images securely
-
-Once deployed, users will be able to access the Food Freshness Checker through a public URL without any local setup.
